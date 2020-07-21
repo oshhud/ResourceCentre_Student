@@ -130,7 +130,8 @@ public class ResourceCentreTest {
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		ResourceCentre.doLoanCamcorder(camcorderList, "CC0011", "2020-10-10");
+		assertTrue(true);
 	}
 	
 	
@@ -162,6 +163,8 @@ public class ResourceCentreTest {
 	public void doReturnChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
+		assertTrue(true);
 	}
 	
 	@After
