@@ -194,7 +194,7 @@ public class ResourceCentre {
 		chromebookList.add(cb);
 		System.out.println("Chromebook added! ~ ");
 		
-		//test
+		//-- 
 	}
 	
 	//================================= Option 3 Loan =================================
