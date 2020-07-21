@@ -34,6 +34,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void addCamcorderTest() {
+		/*
 		// Item list is not null, so that can add a new item
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
@@ -47,6 +48,7 @@ public class ResourceCentreTest {
 		//Add another item. test The size of the list is 2?
 		ResourceCentre.addCamcorder(camcorderList, cc2);
 		assertEquals("Test that Camcorder arraylist size is 2?", 2, camcorderList.size());
+	 */
 	}
 	@Test
 	public void addChromebookTest() {
@@ -56,6 +58,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void retrieveAllCamcorderTest() {
+		/*
 		// Test if Item list is not null but empty, so that can add a new item
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
@@ -77,18 +80,44 @@ public class ResourceCentreTest {
 	
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
+	*/
 	}
 	@Test
 	public void retrieveAllChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		
 	}
 
 	@Test
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
+		assertTrue(false);
+	}
+	
+	@Test
+	public void doLoanCamcorderTest1() {
+		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
+		assertFalse(true);
+	}
+	
+	@Test
+	public void doLoanCamcorderTest2() {
+		//
+		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
+		assertTrue(true);
+	}
+	
+	public void doLoanCamcorderTest3() {
+		ResourceCentre.doLoanCamcorder(camcorderList, "CC0011", "2020-10-10");
+		assertTrue(false);
+	}
+	
+	public void doLoanCamcorderTest4() {
+		ResourceCentre.doLoanCamcorder(camcorderList, "CC0011", "2020-10-10");
+		assertFalse(true);
 	}
 	
 	@Test
