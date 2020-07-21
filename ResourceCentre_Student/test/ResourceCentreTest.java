@@ -73,7 +73,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void retrieveAllCamcorderTest() {
-		/*
+		
 		// Test if Item list is not null but empty, so that can add a new item
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
@@ -95,7 +95,7 @@ public class ResourceCentreTest {
 	
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
-	*/
+	
 	}
 	@Test
 	public void retrieveAllChromebookTest() {
@@ -120,7 +120,6 @@ public class ResourceCentreTest {
 
 				testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0011", "My Google Chromebook 1st", "Yes", "", "Mac OS");
 				testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "", "Win 10");
-			
 				assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 
 	}
