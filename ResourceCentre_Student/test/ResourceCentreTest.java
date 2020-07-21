@@ -105,7 +105,7 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void doLoanCamcorderTest2() {
-		//
+		// tag exist and isLoan is true should return true
 		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
 		assertTrue(true);
 	}
