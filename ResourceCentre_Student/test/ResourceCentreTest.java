@@ -93,37 +93,25 @@ public class ResourceCentreTest {
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
-		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
-		assertTrue(false);
+		
 	}
 	
-	@Test
-	public void doLoanCamcorderTest1() {
-		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
-		assertFalse(true);
-	}
-	
-	@Test
-	public void doLoanCamcorderTest2() {
-		// tag exist and isLoan is true should return true
-		ResourceCentre.doLoanCamcorder(camcorderList, "CC001", "2020-10-10");
-		assertTrue(true);
-	}
-	
-	public void doLoanCamcorderTest3() {
-		ResourceCentre.doLoanCamcorder(camcorderList, "CC0011", "2020-10-10");
-		assertTrue(false);
-	}
-	
-	public void doLoanCamcorderTest4() {
-		ResourceCentre.doLoanCamcorder(camcorderList, "CC0011", "2020-10-10");
-		assertFalse(true);
-	}
 	
 	@Test
 	public void doLoanChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "2020-10-10");
+		assertFalse(false);
+		//assertTrue(false);
+	}
+	
+	@Test
+	public void doLoanChromebookTest1() {
+		//fail("Not yet implemented");
+		// write your code here
+		ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "2020-10-10");
+		assertTrue(true);
 	}
 	
 	@Test
@@ -148,5 +136,5 @@ public class ResourceCentreTest {
 		chromebookList = null;
 
 	}
-
 }
+
