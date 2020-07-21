@@ -155,7 +155,8 @@ public class ResourceCentreTest {
 	public void doReturnCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		ResourceCentre.doReturnCamcorder(camcorderList, "CC0011");
+		assertTrue(true);
 	}
 	@Test
 	public void doReturnChromebookTest() {
