@@ -180,19 +180,21 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		String tag = Helper.readString("Enter asset tag > ");
+		String desc = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter operation system > ");
+		
+		cb = new Chromebook(tag,desc,os);
 		return cb;
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
-		String tag = Helper.readString("Enter asset tag > ");
-		String desc = Helper.readString("Enter description > ");
-		String os = Helper.readString("Enter operation system > ");
 		
-		chromebookList.add(new Chromebook(tag, desc,os));
+		chromebookList.add(cb);
+		System.out.println("Chromebook added! ~ ");
 		
-		System.out.println("Chromebook added");
-		
+		//test
 	}
 	
 	//================================= Option 3 Loan =================================
