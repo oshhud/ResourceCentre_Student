@@ -165,8 +165,15 @@ public class ResourceCentre {
 		
 	}
 	public static void addCamcorder(ArrayList<Camcorder> camcorderList, Camcorder cc) {
+		/*
+		String tag = Helper.readString("Enter asset tag > ");
+		String name = Helper.readString("Enter camcorder name > ");
+		int zoom = Helper.readInt("Enter optical zoom > ");
 		
-		camcorderList.add(cc);
+		camcorderList.add(new Camcorder(tag, name,zoom));
+		*/
+		//camcorderList.add(cc);
+		
 		System.out.println("Camcorder added");
 	}
 	
@@ -178,6 +185,14 @@ public class ResourceCentre {
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		String tag = Helper.readString("Enter asset tag > ");
+		String desc = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter operation system > ");
+		
+		chromebookList.add(new Chromebook(tag, desc,os));
+		
+		System.out.println("Chromebook added");
+		
 	}
 	
 	//================================= Option 3 Loan =================================
